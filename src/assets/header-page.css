@@ -1,0 +1,27 @@
+#logo-home-page {
+  width: 80px;
+}
+
+#menu-icon {
+  width: 45px;
+}
+
+#header-links a {
+  font-family: 'oswald_light';
+  color: #000000;
+}
+
+@font-face {
+  font-family: 'oswald_light';
+  src: url('../../dist/assets/Oswald-Light.ttf');
+}
+
+#header-block {
+  background-color: #bfc0c0;
+  width: 100%;
+}
+
+#get-in-touch {
+  background: #e15735;
+  color: #ffffff;
+}

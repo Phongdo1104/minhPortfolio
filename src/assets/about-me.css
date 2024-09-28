@@ -1,0 +1,56 @@
+.desk-angle-1 {
+  background-image: url('../../dist/assets/images/desk-angle1-dark.png');
+  width: 100%;
+  height: 2000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 10vh;
+  opacity: 70%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+}
+
+.avatar {
+  width: 60vh;
+  display: block;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.logo-tools {
+  width: 6vh;
+  display: block;
+  pointer-events: none;
+}
+
+.certificate {
+  width: 30vh;
+  display: block;
+  pointer-events: none;
+}
+
+span#fullName {
+  font-family: 'oswald_bold';
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+/*
+    https://bootstrapclasses.com/can-adjust-text-size-bootstrap-responsive-design/
+  */
+.text-overlay {
+  bottom: 0;
+  width: 100%;
+  font-size: calc(100% + 3.5vw + 3vh) !important;
+  font-family: 'oswald_bold';
+}
