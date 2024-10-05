@@ -1,5 +1,9 @@
+#about-me {
+  padding-top: 5rem;
+}
+
 .desk-angle-1 {
-  background-image: url('../../dist/assets/images/desk-angle1-dark.png');
+  background-image: url('/images/desk-angle1-dark.png');
   width: 100%;
   height: 2000px;
   background-position: center;
@@ -17,10 +21,9 @@
 }
 
 .avatar {
-  width: 60vh;
+  width: 90%;
   display: block;
   pointer-events: none;
-  z-index: 4;
 }
 
 .logo-tools {
@@ -35,7 +38,7 @@
   pointer-events: none;
 }
 
-span#fullName {
+#fullName {
   font-family: 'oswald_bold';
 }
 
@@ -51,6 +54,12 @@ span#fullName {
 .text-overlay {
   bottom: 0;
   width: 100%;
-  font-size: calc(100% + 3.5vw + 3vh) !important;
+  font-size: calc(5vw + 3vh) !important;
   font-family: 'oswald_bold';
+}
+
+@media (max-width: 768px) {
+  #nameHeader {
+    text-align: center !important;
+  }
 }
