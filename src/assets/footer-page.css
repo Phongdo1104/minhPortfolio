@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'redditsans_regular';
+
+  src: url('/fonts/RedditSans-Regular.ttf');
+}
+
+.testimonial-avatar {
+  width: 10vh;
+}
+
+.testimonial-text {
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+.testimonial-block-text {
+  /* font-family: 'redditsans_regular'; */
+  font-family: 'teachers-regular';
+  font-size: calc(12px + 0.5vw);
+  padding: 0 calc(10px + 10vw);
+}
+
+.testimonial-block {
+  padding: 6vw;
+}
+
+.author {
+  font-family: 'oswald_regular';
+  text-decoration: underline;
+  color: #e15735;
+}
+
+swiper-container {
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer-bg {
+  background-image: url('/images/Background_Grid.jpg');
+  width: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-img {
+  min-width: 30vh;
+  max-width: 25%;
+}
+
+.footer-info-block {
+  padding-top: 10vw;
+}
+
+@media (min-width: 768px) {
+  .slogan-top {
+    display: flex !important;
+    width: 70%;
+    padding-top: 5vw;
+  }
+  .slogan-bottom {
+    display: flex !important;
+    width: 70%;
+    padding-top: 5vw;
+    bottom: 40%;
+  }
+  .responsive-icon-black {
+    display: flex !important;
+  }
+  .responsive-icon-white {
+    display: none !important;
+  }
+}
+
+.info-btn {
+  bottom: 10%;
+}
+
+.contact-info-block {
+  width: 80%;
+}
+
+.slogan-text {
+  font-family: 'oswald_bold';
+  /* font-size: 3vw; */
+}
+
+.copyright {
+  font-family: 'oswald_regular';
+  font-size: calc(10px + 1vw);
+}
+
+.gif-slogan {
+  width: 15vw;
+}
+
+.invert-color-icon {
+  filter: invert();
+}
+
+.icon-contact {
+  width: calc(30px + 3vw);
+  padding-bottom: 50px;
+}
