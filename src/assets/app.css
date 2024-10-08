@@ -1,7 +1,13 @@
 @font-face {
-  font-family: 'teachers-regular';
+  font-family: 'teachers_regular';
 
   src: url('/fonts/Teachers-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'teachers_extra_bold';
+
+  src: url('/fonts/Teachers-ExtraBold.ttf');
 }
 
 @font-face {
@@ -16,10 +22,16 @@
   src: url('/fonts/Oswald-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'redditsans_regular';
+
+  src: url('/fonts/RedditSans-Regular.ttf');
+}
+
 * {
   padding: 0;
   margin: 0;
-  font-family: 'teachers-regular';
+  font-family: 'teachers_regular';
 }
 
 .avatar-shadow {
@@ -73,4 +85,10 @@
 #footer-block {
   background: rgb(191, 192, 192);
   width: 100%;
+}
+
+@media(max-width: 767px) {
+    .before-header {
+        padding-top: 10vw;
+    }
 }

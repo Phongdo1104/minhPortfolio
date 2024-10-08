@@ -1,11 +1,16 @@
 #about-me {
-  padding-top: 5rem;
+  padding-top: 6rem;
+}
+
+#achievements {
+  padding-top: 6vw;
+  padding-bottom: 6vw;
 }
 
 .desk-angle-1 {
-  background-image: url('/images/desk-angle1-dark.png');
+  background-image: url('/images/Workspace.png');
   width: 100%;
-  height: 2000px;
+  /* height: 2000px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,6 +45,7 @@
 
 #fullName {
   font-family: 'oswald_bold';
+  font-size: calc(3vw + 2.5vh) !important;
 }
 
 .image-container {
@@ -54,12 +60,73 @@
 .text-overlay {
   bottom: 0;
   width: 100%;
-  font-size: calc(5vw + 3vh) !important;
+  font-size: calc(5vw + 2.5vh) !important;
   font-family: 'oswald_bold';
 }
 
-@media (max-width: 768px) {
+#scroll-text {
+  overflow: hidden;
+}
+
+.branding-text > p {
+  font-family: 'oswald_bold';
+  color: #e15735;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.title-achievements {
+  font-family: 'oswald_bold';
+}
+.achievements-count {
+  font-family: 'oswald_bold';
+  color: #e15735;
+  font-size: calc(10vw + 10vh);
+}
+.show-reel {
+  opacity: 50%;
+  /* width: calc() */
+}
+
+@media (max-width: 766px) {
   #nameHeader {
     text-align: center !important;
+  }
+  .text-overlay {
+    bottom: 0;
+    width: 100%;
+    font-size: calc(11vw + 2.5vh) !important;
+  }
+  #fullName {
+    font-size: calc(10vw + 2.5vh) !important;
+  }
+  .achievements-description {
+    margin-bottom: 10vw;
+  }
+  .show-reel {
+    margin-bottom: 10vw;
   }
 }
