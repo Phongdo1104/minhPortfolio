@@ -1,0 +1,68 @@
+.contact-block {
+  height: 100%;
+}
+.background {
+  background-image: url('/images/Workspace.png');
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.orange-rect {
+  height: calc(4vw + 2vh);
+  background-color: #e15735;
+}
+.body-rect {
+  padding: 2vw 2vw;
+  background-color: #bfc0c0;
+}
+.rect {
+  width: calc(30vw + 20vh);
+  padding-top: 3vw;
+}
+.body-info-contact {
+  padding-top: 10vw;
+  height: 100%;
+  padding-bottom: 15vw;
+}
+.info-text {
+  font-family: 'teachers_extra_bold';
+  color: #e15735;
+}
+.info-title {
+  font-family: 'oswald_bold';
+  font-size: calc(6vw + 2vh);
+  padding-bottom: 1vh;
+}
+.sub-title-contact {
+  font-family: 'oswald_bold';
+}
+.description-contact {
+  font-size: calc(1vw + 1vh);
+}
+
+@media (max-width: 767px) {
+  .rect {
+    width: calc(40vw + 20vh);
+    padding-top: 10vw;
+  }
+  .info-title {
+    font-size: calc(10vw + 2vh);
+  }
+  .info-text {
+    font-size: calc(0.5vw + 2vh);
+  }
+  .description-contact {
+    font-size: calc(0.5vw + 1.5vh);
+  }
+  .orange-rect {
+    height: calc(5vw + 2vh);
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-info-text-block {
+    margin-bottom: 1.5rem;
+    text-align: center !important;
+  }
+}

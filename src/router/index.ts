@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutMe from '../views/AboutMe.vue'
 import HomePage from '../views/HomePage.vue'
+import ContactMe from '../views/ContactMe.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,12 @@ const router = createRouter({
       path: '/about-me',
       name: 'about-me',
       component: AboutMe,
+      meta: { transition: '' } // slide
+    },
+    {
+      path: '/contact-me',
+      name: 'contact-me',
+      component: ContactMe,
       meta: { transition: '' } // slide
     }
   ]

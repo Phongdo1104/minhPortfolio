@@ -25,3 +25,43 @@
   background: #e15735;
   color: #ffffff;
 }
+.w3-button {
+  width: 100%;
+}
+.sidebar-navigation {
+  overflow: auto;
+  background-color: #bfc0c0;
+  z-index: 3;
+  width: 100%;
+  right: 0;
+}
+.sidebar-block .sidebar-item {
+  width: 100% !important;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+}
+.fixed-header {
+  position: fixed;
+  background-color: #bfc0c0;
+  height: 80px !important;
+  width: 100%;
+}
+#fixedHeader {
+  z-index: 4;
+}
+.header-sp {
+  height: 80px;
+}
+.close-circle-icon {
+  filter: invert();
+  width: 15%;
+}
+.fixed-header-text a {
+  font-family: 'teachers_regular';
+  color: #000000 !important;
+}
