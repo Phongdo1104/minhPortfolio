@@ -3,7 +3,7 @@
         <div class="position-relative d-flex justify-content-center footer-info-block">
             <img class="img-fluid footer-img" src="/images/Footer-resize.png" alt="Minh_with_header.png">
             <div
-                class="position-absolute h1 d-flex border-bottom border-dark border-3 justify-content-between d-none slogan-top">
+                class="position-absolute d-flex border-bottom border-dark border-3 justify-content-between d-none slogan-top">
                 <div class="slogan-text">let's make</div>
                 <div class="slogan-text">a spectacular</div>
             </div>

@@ -108,7 +108,7 @@
 }
 .show-reel {
   opacity: 50%;
-  /* width: calc() */
+  width: calc(8vw + 10vh);
 }
 
 @media (max-width: 766px) {

@@ -1,0 +1,87 @@
+.profile-block {
+  background: #0d160b;
+  height: 100%;
+}
+
+.img-profile-block img {
+  width: calc(30vw + 20vh);
+}
+
+.info-profile {
+  bottom: 0px;
+  z-index: 2;
+}
+
+.info-profile p {
+  font-size: calc(0.5vw + 1vh);
+  /* padding-right: 10rem; */
+}
+
+.showreel-btn {
+  width: calc(10vw + 10vh);
+  opacity: 40%;
+}
+
+.profile-parent-block {
+    width: 40%;
+}
+
+#contact-btn-profile {
+  background: #e15735;
+  color: #ffffff;
+}
+
+#about-me-btn {
+  background: transparent;
+  color: #ffffff;
+}
+
+.showreel-btn-parent {
+    padding-bottom: 4rem;
+}
+
+.text-center #title-works {
+    font-family: "oswald_bold";
+    font-size: calc(3vw + 3vh);
+}
+
+.text-center #sub-description {
+    font-family: "teachers_regular";
+    font-size: 1.5rem;
+}
+
+.col #bg-img-block {
+    background: #e15735;
+}
+
+.col #bg-img-block img {
+    width: 100%;
+    padding: calc(2vw + 2vh) calc(4vw + 2vh) 0 calc(4vw + 2vh);
+}
+
+#selected-works-block {
+    background: #d9d9d9;
+}
+
+#selected-works-block .title {
+    padding: 10rem 0;
+}
+
+.description-works .info-project-block {
+    padding: 0 8rem;
+    height: 100%;
+}
+
+.works-collection {
+    max-width: 100%;
+}
+
+.col .description-works #title-work {
+    font-family: "oswald_bold";
+    color: #e15735;
+}
+
+.sub-description-works {
+    font-family: "teachers_extra_bold";
+    padding-right: 10rem;
+}

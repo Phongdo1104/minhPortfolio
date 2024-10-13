@@ -61,7 +61,7 @@ import '../assets/about-me.css'
                     </div>
                 </div>
                 <div id="achievements" class="row">
-                    <div class="col-sm text-center text-white video-editing-block">
+                    <div class="col-sm text-center text-white video-editing-block ps-5 pe-5">
                         <div class="text-uppercase title-achievements h2">
                             Video Editing
                         </div>
@@ -70,12 +70,12 @@ import '../assets/about-me.css'
                             Since 2020, I've self-taught and edited a range of videos, including tutorials,
                             documentaries, K.O.P., and TVCs.</div>
                     </div>
-                    <div class="col-sm text-white d-flex align-items-center">
+                    <div class="col-sm text-white d-flex align-items-center justify-content-center p-5">
                         <a href="#">
                             <img class="show-reel img-fluid" src="/svg/Showreel.svg" alt="showReelButton">
                         </a>
                     </div>
-                    <div class="col-sm text-center text-white marketing-block">
+                    <div class="col-sm text-center text-white marketing-block ps-5 pe-5">
                         <div class="text-uppercase title-achievements h2">
                             Social Media Marketing
                         </div>

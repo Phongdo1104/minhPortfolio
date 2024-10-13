@@ -48,6 +48,7 @@
 
 .slogan-text {
   font-family: 'oswald_bold';
+  font-size: calc(2vw + 1vh);
 }
 
 .copyright {

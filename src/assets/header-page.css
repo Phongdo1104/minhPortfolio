@@ -17,7 +17,7 @@
 }
 
 #header-block {
-  background-color: #bfc0c0;
+  background-color: #d9d9d9;
   width: 100%;
 }
 
@@ -30,7 +30,7 @@
 }
 .sidebar-navigation {
   overflow: auto;
-  background-color: #bfc0c0;
+  background-color: #d9d9d9;
   z-index: 3;
   width: 100%;
   right: 0;
@@ -47,7 +47,7 @@
 }
 .fixed-header {
   position: fixed;
-  background-color: #bfc0c0;
+  background-color: #d9d9d9;
   height: 80px !important;
   width: 100%;
 }
