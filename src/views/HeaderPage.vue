@@ -2,7 +2,7 @@
 import '../assets/header-page.css'
 import { ref } from 'vue'
 
-var show = ref(false);
+let show = ref(false);
 
 function closePopup() {
     this.show = false;
