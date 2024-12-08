@@ -2,7 +2,7 @@
 import '../assets/header-page.css'
 import { ref } from 'vue'
 
-var show = ref(false);
+let show = ref(false);
 
 function closePopup() {
     this.show = false;
@@ -37,11 +37,11 @@ function closePopup() {
                     <RouterLink to="/about-me" class="header-btn text-decoration-none ms-5 fw-bold" id="about-me">
                         About Me
                     </RouterLink>
-                    <RouterLink to="/about-me" class="header-btn text-decoration-none ms-5 fw-bold" id="my-projects">
+                    <RouterLink to="/my-works" class="header-btn text-decoration-none ms-5 fw-bold" id="my-projects">
                         My Projects
                     </RouterLink>
                     <RouterLink to="/contact-me" class="text-decoration-none ms-5">
-                        <button id="get-in-touch" class="ps-5 pt-2 pb-2 pe-5 fw-bold">Get In Touch</button>
+                        <button id="get-in-touch" class="ps-5 pt-2 pb-2 pe-5 fw-bold border border-2 border-dark">Get In Touch</button>
                     </RouterLink>
                 </div>
             </div>
@@ -58,7 +58,7 @@ function closePopup() {
                     <RouterLink to="/about-me" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
                         About me
                     </RouterLink>
-                    <RouterLink to="/about-me" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
+                    <RouterLink to="/my-works" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
                         My Projects
                     </RouterLink>
                     <RouterLink to="/contact-me" @click="closePopup()"

@@ -1,0 +1,21 @@
+.workspace {
+  width: 100%;
+  background-image: url('/images/Workspace.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-works {
+  font-family: 'oswald_bold';
+  font-size: calc(5vw + 4vh);
+}
+
+.works-header a {
+  font-family: 'oswald_regular';
+}
+
+.workspace .container {
+  padding: calc(12vw + 5vh) 2rem;
+}
+
