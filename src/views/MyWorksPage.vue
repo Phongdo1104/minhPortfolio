@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import '../assets/my-works.css';
-import MyWorkBlock from './layouts/MyWorkBlock.vue';
+import MyWorkBlock from '../components/MyWorkBlock.vue';
 
 import { ref } from 'vue';
 

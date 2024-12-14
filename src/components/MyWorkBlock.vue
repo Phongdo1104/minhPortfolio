@@ -121,7 +121,7 @@
 }
 </style>
 <script lang="ts">
-import '../../assets/show-reel.css'
+import '../assets/show-reel.css'
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
