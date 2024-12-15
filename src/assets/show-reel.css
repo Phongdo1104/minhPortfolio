@@ -7,7 +7,7 @@
   background-size: cover;
 }
 
-#challenge-objective {
+.challenge-objective {
   background-image: url('/images/MyWorks/ChallengeWorks_dim.png');
   background-color: #000000;
   background-position: center;
@@ -89,31 +89,30 @@
   padding: 6vw 0 0;
 }
 
-#title-works {
-  /* padding: 20vw 0 0; */
+.title-works {
   height: 60%;
   align-items: end;
   display: flex;
 }
 
-#title-works span {
+.title-works span {
   color: #ffffff;
   font-size: 80px !important;
 }
 
-#title-works span,
-#my-background-title span,
-#video-type span,
-#editing-style span,
-#mood-tone span,
-#platform span,
-#my-role-title span {
+.title-works span,
+.my-background-title span,
+.video-type span,
+.editing-style span,
+.mood-tone span,
+.platform span,
+.my-role-title span {
   font-family: 'oswald_bold';
-  font-size: 50px;
+  font-size: 50px !important;
 }
 
-#my-background-title span,
-#my-role-title span {
+.my-background-title span,
+.my-role-title span {
   text-transform: uppercase;
 }
 
@@ -134,8 +133,8 @@
   font-family: 'teachers_extra_bold';
 }
 
-#my-background-description span,
-#my-role-description span {
+.my-background-description span,
+.my-role-description span {
   font-size: 20px;
 }
 
@@ -153,14 +152,15 @@
   display: grid;
 }
 
-#video-showreel-block {
+.video-showreel-block {
   height: 60%;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
-#video-showreel-block img {
+.video-showreel-block img {
   margin-top: 50px;
 }
 
@@ -168,24 +168,31 @@
   width: 70%;
 }
 
+.my-role-description {
+  justify-content: end;
+}
+
 @media (max-width: 900px) {
   #title-works span {
     font-size: 50px !important;
   }
-  #my-background-title span,
-  #video-type span,
-  #editing-style span,
-  #mood-tone span,
-  #platform span,
-  #my-role-title span {
+  .my-background-title span,
+  .video-type span,
+  .editing-style span,
+  .mood-tone span,
+  .platform span,
+  .my-role-title span {
     font-size: 30px !important;
   }
-  #my-background-description span,
-  #my-role-description span {
+  .my-background-description span,
+  .my-role-description span {
     font-size: 15px;
   }
   .podcast-bg {
     background-position: center;
+  }
+  .my-role-description div {
+    text-align: start !important;
   }
 }
 
@@ -201,12 +208,18 @@
     display: grid;
     align-items: start !important;
   }
+  .my-role-block {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .my-role-description {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 450px) {
-  .showreel-work {
-    padding: 20vh 2vh 30vh;
-  }
   #video-showreel-block {
     height: 60%;
     display: grid;
@@ -223,5 +236,8 @@
   }
   .documentary-bg {
     background-position: top 0% right 30%;
+  }
+  .my-role-description {
+    justify-content: start !important;
   }
 }

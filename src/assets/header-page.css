@@ -33,7 +33,29 @@
   background-color: #d9d9d9;
   z-index: 3;
   width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.sidebar-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
   right: 0;
+  position: fixed;
+  width: 50%;
+  padding-top: 5rem;
+  align-items: center;
+}
+.menu-mobile-bg {
+  background: url('/images/Footer-resize.png');
+  position: fixed;
+  width: 50%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 .sidebar-block .sidebar-item {
   width: 100% !important;
@@ -62,6 +84,7 @@
   width: 15%;
 }
 .fixed-header-text a {
-  font-family: 'teachers_regular';
+  font-family: 'oswald_regular';
+  font-size: 20px;
   color: #000000 !important;
 }

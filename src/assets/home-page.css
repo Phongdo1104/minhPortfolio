@@ -1,10 +1,7 @@
 .profile-block {
   background: #0d160b;
   height: 100%;
-}
-
-.img-profile-block img {
-  width: calc(30vw + 20vh);
+  overflow: hidden;
 }
 
 .info-profile {
@@ -13,8 +10,8 @@
 }
 
 .info-profile p {
-  font-size: calc(0.5vw + 1vh);
-  /* padding-right: 10rem; */
+  font-size: 23px;
+  padding-right: 30px;
 }
 
 .showreel-btn {
@@ -23,7 +20,8 @@
 }
 
 .profile-parent-block {
-    width: 40%;
+  width: 40%;
+  padding-bottom: 8rem;
 }
 
 #contact-btn-profile {
@@ -37,51 +35,300 @@
 }
 
 .showreel-btn-parent {
-    padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
-.text-center #title-works {
-    font-family: "oswald_bold";
-    font-size: calc(3vw + 3vh);
+.text-center #title-works-works {
+  font-family: 'oswald_bold';
+  font-size: 80px;
+}
+
+.black-text-color-title {
+  font-family: 'oswald_bold';
 }
 
 .text-center #sub-description {
-    font-family: "teachers_regular";
-    font-size: 1.5rem;
+  font-family: 'teachers_regular';
+  font-size: 25px;
 }
 
-.col #bg-img-block {
-    background: #e15735;
+.col-sm .bg-img-block {
+  height: 100%;
+  background: #e15735;
+  text-align: center;
+  display: grid;
+  align-content: stretch;
+  align-items: end;
+  justify-content: center;
+  padding: 0 50px;
 }
 
-.col #bg-img-block img {
-    width: 100%;
-    padding: calc(2vw + 2vh) calc(4vw + 2vh) 0 calc(4vw + 2vh);
+.genre-description-pointer span {
+  font-family: 'teachers_extra_bold';
 }
 
 #selected-works-block {
-    background: #d9d9d9;
+  background: #d9d9d9;
 }
 
 #selected-works-block .title {
-    padding: 10rem 0;
+  padding: 10rem 0;
 }
 
 .description-works .info-project-block {
-    padding: 0 8rem;
-    height: 100%;
+  padding: 5rem 8rem;
 }
 
 .works-collection {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-.col .description-works #title-work {
-    font-family: "oswald_bold";
-    color: #e15735;
+.description-works .title-work {
+  font-family: 'oswald_bold';
+  color: #e15735;
 }
 
 .sub-description-works {
-    font-family: "teachers_extra_bold";
-    padding-right: 10rem;
+  font-family: 'teachers_extra_bold';
+  padding-right: 10rem;
+}
+
+.read-more-block {
+  position: relative;
+}
+
+.read-more-block .read-more-button {
+  font-family: 'oswald_regular';
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+}
+
+.read-more-button-left {
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.read-more-button-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.genre-description-pointer {
+  line-break: auto;
+  margin-right: 100px;
+}
+
+.genre-description-arches {
+  line-break: auto;
+  margin-right: 100px;
+}
+
+.genre-description {
+  margin-right: 10px;
+}
+
+.arches-project {
+  padding: 5rem 5rem 5rem 11rem;
+}
+
+.pointer-clicker-info-project-block {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 5rem;
+}
+
+.review-info-project-block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 9rem 5rem;
+}
+
+#pointer-click-brief-info-block {
+  height: 100%;
+  background: #000000;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+#pointer-review-info-bg {
+  width: 100%;
+  background-image: url('/images/PointerClicker.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all-my-works {
+  text-align: center;
+  padding-top: 10rem;
+}
+
+.all-my-works span {
+  font-family: 'oswald_regular';
+  color: #e15735;
+  font-size: 60px;
+}
+
+.marquee-homepage {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+  position: absolute;
+  bottom: 0;
+}
+
+.marquee-homepage p {
+  display: inline-block;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+.marquee-info {
+  position: relative;
+}
+
+.profile-block-md {
+  padding-top: 100px;
+}
+
+@media (max-width: 500px) {
+  .marquee-homepage p {
+    font-size: 35px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-introduction-block {
+    padding-top: 5rem;
+  }
+
+  .profile-block-md {
+    padding-top: unset;
+  }
+
+  .mobile-introduction-block p {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .profile-block-mobile {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .img-profile-block {
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .d-md-none-max {
+    display: none !important;
+  }
+
+  .show-reel-button-bg-mobile {
+    width: 100%;
+    background-image: url('/svg/Showreel.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-block-max {
+    display: block !important;
+  }
+
+  .d-md-flex-max {
+    display: flex !important;
+  }
+
+  .d-none-block-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-profile p {
+    font-size: 16px !important;
+  }
+
+  .marquee-homepage p {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .d-md-block-mobile {
+    display: block;
+  }
+
+  .mobile-info-block {
+    padding: 0 2rem;
+    justify-content: flex-start;
+  }
+
+  .mobile-info-block-review {
+    padding: 2rem;
+  }
+
+  .genre-description-pointer {
+    margin: 0rem !important;
+    line-height: 1.5;
+  }
+
+  .sub-description-works {
+    padding-right: 0;
+  }
+
+  .arches-project {
+    padding: 2rem !important;
+  }
+
+  .read-more-button-right-mobile {
+    top: 50%;
+    right: 0%;
+    left: unset;
+    transform: translate(-50%, -50%);
+    font-size: 15px !important;
+    padding: 10px 40px !important;
+  }
+
+  .info-project-block {
+    padding: 2rem !important;
+  }
+
+  .logo-project-mobile {
+    padding: calc(2vw + 2vh) !important;
+  }
+
+  .all-my-works {
+    padding-top: 5rem;
+  }
+
+  .all-my-works span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .info-profile p {
+    font-size: 20px;
+  }
 }

@@ -5,25 +5,25 @@
         }" :navigation="true" :modules="modules" :id="id" class="swiper-wrapper">
             <swiper-slide :class="roleBgClass">
                 <div class="h-100">
-                    <div id="title-works" class="container">
+                    <div class="container title-works">
                         <span v-html="workTitle"></span>
                     </div>
                     <div class="description-work">
                         <div class="container showreel-work">
                             <div class="row justify-content-between">
                                 <div class="col-sm my-background-block">
-                                    <div id="my-background-title">
+                                    <div class="my-background-title">
                                         <span>Background</span>
                                     </div>
-                                    <div id="my-background-description">
+                                    <div class="my-background-description">
                                         <span v-html="myBgDescription"></span>
                                     </div>
                                 </div>
-                                <div class="col-sm" id="my-role-block">
-                                    <div id="my-role-title">
+                                <div class="col-sm my-role-block">
+                                    <div class="my-role-title">
                                         <span>My Role</span>
                                     </div>
-                                    <div id="my-role-description">
+                                    <div>
                                         <span v-html="myRoleDescription"></span>
                                     </div>
                                 </div>
@@ -32,18 +32,18 @@
                     </div>
                 </div>
             </swiper-slide>
-            <swiper-slide id="challenge-objective">
-                <div id="video-showreel-block" class="container text-center">
+            <swiper-slide class="challenge-objective">
+                <div class="video-showreel-block container text-center">
                     <img class="img-fluid business-obj-img-size" :src="businessObjBgSrc" alt="showreel-video">
                 </div>
                 <div class="challenge-objective-block">
                     <div class="container">
-                        <div class="row justify-content-end">
-                            <div class="col-auto" id="my-role-block">
-                                <div id="my-role-title">
+                        <div class="row my-role-description">
+                            <div class="col-auto">
+                                <div class="my-role-title">
                                     <span>Business Objective</span>
                                 </div>
-                                <div class="text-end" id="my-role-description">
+                                <div class="text-end">
                                     <span v-html="businessObj"></span>
                                 </div>
                             </div>
@@ -57,30 +57,30 @@
                         <div class="container">
                             <div class="row justify-content-around">
                                 <div class="col-auto my-background-block">
-                                    <div id="video-type">
+                                    <div class="video-type">
                                         <span>Video Type</span>
                                     </div>
-                                    <div id="my-background-description">
+                                    <div class="my-background-description">
                                         <span v-html="videoTypeDesc"></span>
                                     </div>
-                                    <div id="mood-tone">
+                                    <div class="mood-tone">
                                         <span>Mood & Tone</span>
                                     </div>
-                                    <div id="my-background-description">
+                                    <div class="my-background-description">
                                         <span v-html="moodToneDesc"></span>
                                     </div>
                                 </div>
-                                <div class="col-auto" id="my-role-block">
-                                    <div id="editing-style">
+                                <div class="col-auto my-role-block">
+                                    <div class="editing-style">
                                         <span>Editing style</span>
                                     </div>
-                                    <div id="my-background-description">
+                                    <div class="my-background-description">
                                         <span v-html="editingStyleDesc"></span>
                                     </div>
-                                    <div id="platform">
+                                    <div class="platform">
                                         <span>Platform</span>
                                     </div>
-                                    <div id="my-background-description">
+                                    <div class="my-background-description">
                                         <span v-html="platformDesc"></span>
                                     </div>
                                 </div>
@@ -97,14 +97,9 @@
     height: auto;
 }
 
-.swiper-wrapper .swiper-button-prev {
-    margin-left: 5%;
-    margin-top: 15%;
-}
-
+.swiper-wrapper .swiper-button-prev,
 .swiper-wrapper .swiper-button-next {
-    margin-right: 5%;
-    margin-top: 15%;
+    display: none;
 }
 
 .swiper-wrapper .swiper-button-disabled {
@@ -121,7 +116,7 @@
 }
 </style>
 <script lang="ts">
-import '../../assets/show-reel.css'
+import '../assets/show-reel.css'
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';

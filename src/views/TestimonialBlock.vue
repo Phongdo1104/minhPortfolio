@@ -54,23 +54,13 @@
     </swiper>
 </template>
 <style>
-#testimonial-swiper .swiper-button-prev {
-    margin-left: 20%;
-}
-
-#testimonial-swiper .swiper-button-next {
-    margin-right: 20%;
-}
-
 #testimonial-swiper .swiper-button-disabled {
     display: none !important;
 }
 
-@media (max-width: 768px) {
-    #testimonial-swiper .swiper-button-prev,
-    #testimonial-swiper .swiper-button-next {
-        display: none !important;
-    }
+#testimonial-swiper .swiper-button-prev,
+#testimonial-swiper .swiper-button-next {
+    display: none !important;
 }
 </style>
 <script lang="ts">

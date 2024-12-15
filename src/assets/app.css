@@ -95,10 +95,10 @@
 
 @media (max-width: 768px) {
   .d-md-block {
-    display: block;
+    display: block !important;
   }
 
   .d-md-none {
-    display: none;
+    display: none !important;
   }
 }
