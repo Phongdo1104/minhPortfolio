@@ -6,8 +6,8 @@ let show = ref(false);
 
 function closePopup() {
     this.show = false;
+    window.scrollTo(0, 0);
 }
-
 </script>
 <template>
     <div class="d-block d-md-none header-sp fixed-header" id="fixedHeader">
@@ -17,9 +17,9 @@ function closePopup() {
             </RouterLink>
         </div>
         <div class="position-absolute top-0 end-0 mt-3 me-3">
-            <a href="#" @click="show = !show">
+            <div href="#" @click="show = !show" id="menu-icon">
                 <img id="menu-icon" src="/svg/menu.svg" alt="" />
-            </a>
+            </div>
         </div>
     </div>
     <div class="container-sm d-none d-md-block">
@@ -47,28 +47,32 @@ function closePopup() {
             </div>
         </div>
     </div>
-    <transition :duration="450" name="nested">
-        <div v-if="show" class="d-block d-md-none h-100 position-fixed align-items-center h1 sidebar-navigation sidebar-block pt-5 h-100 d-flex justify-content-center align-items-center fixed-header-text"
-            id="fixedSidebar" data-toggle="animation" data-animation-reset="true" data-animation="slide-right">
-            <div class="pt-5 h-100 d-flex justify-content-center align-items-center">
-                <div class="fixed-header-text">
-                    <RouterLink to="/" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
-                        Home
-                    </RouterLink>
-                    <RouterLink to="/about-me" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
-                        About me
-                    </RouterLink>
-                    <RouterLink to="/my-works" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
-                        My Projects
-                    </RouterLink>
-                    <RouterLink to="/contact-me" @click="closePopup()"
-                        class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
-                        Get in touch
-                    </RouterLink>
+    <div class="header-bg-mobile">
+        <transition :duration="450" name="nested">
+            <div v-if="show" class="d-block d-md-none h1 sidebar-navigation sidebar-block fixed-header-text"
+                id="fixedSidebar" data-toggle="animation" data-animation-reset="true" data-animation="slide-right">
+                <div class="menu-mobile-bg">
+                </div>
+                <div class="sidebar-content">
+                    <div class="fixed-header-text">
+                        <RouterLink to="/" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
+                            Home
+                        </RouterLink>
+                        <RouterLink to="/about-me" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
+                            About me
+                        </RouterLink>
+                        <RouterLink to="/my-works" @click="closePopup()" class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
+                            My Projects
+                        </RouterLink>
+                        <RouterLink to="/contact-me" @click="closePopup()"
+                            class="mb-3 text-white text-decoration-none text-center sidebar-item w-100">
+                            Get in touch
+                        </RouterLink>
+                    </div>
                 </div>
             </div>
-        </div>
-    </transition>
+        </transition>
+    </div>
 </template>
 <style>
 .outer,

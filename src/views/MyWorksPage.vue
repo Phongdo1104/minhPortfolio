@@ -19,7 +19,7 @@ function scrollToView(refName: string) {
                     </div>
                     <div>
                         <p class="h5">
-                            Since 2020, I’ve self-taught and edited a range of videos, including tutorials,
+                            Since 2020, I've self-taught and edited a range of videos, including tutorials,
                             documentaries, K.O.P., TVCs, and short movies
                         </p>
                     </div>

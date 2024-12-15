@@ -1,8 +1,8 @@
 <template>
     <div class="profile-block">
-        <div class="container profile-block-mobile">
+        <div class="container profile-block-md profile-block-mobile">
             <div class="row d-md-none-max d-flex-block-max">
-                <div class="col-xl text-white d-flex align-items-center profile-parent-block">
+                <div class="col-md-2 text-white d-flex align-items-center profile-parent-block">
                     <div class="position-relative w-100">
                         <div class="position-absolute info-profile">
                             <div>
@@ -76,6 +76,15 @@
                 </div>
             </div>
         </div>
+        <div class="marquee-profile-block">
+            <div class="marquee-info">
+                <div class="marquee-homepage branding-text text-center text-uppercase">
+                    <p class="me-3">Minh nguyen | Video editor</p>
+                    <p class="me-3">| Minh nguyen | Video editor</p>
+                    <p class="me-3">| Minh nguyen | Video editor</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="selected-works-block">
         <div class="title d-none d-md-block">
@@ -89,7 +98,7 @@
             <!-- Pointer Click -->
             <swiper :effect="'flip'" :grabCursor="true" :pagination="{
                 dynamicBullets: true,
-            }" :navigation="true" :modules="modules" :id="id" class="swiper-wrapper">
+            }" :navigation="true" :modules="modules" class="swiper-wrapper-selected-project">
                 <swiper-slide>
                     <div class="row m-0 h-100">
                         <div class="col-sm p-0 d-md-none-max d-md-block-max">
@@ -178,7 +187,7 @@
                 </div>
                 <div class="col-sm p-0 description-works">
                     <div class="arches-project">
-                        <div class="text-uppercase display-4 pb-5 title-work">Arches | Employee's Voice</div>
+                        <div class="text-uppercase display-4 pb-5 title-work">Arches</div>
                         <div class="h4 genre-description-arches">
                             <div class="text-uppercase">Brand Promotion / Video Production / Content Creation</div>
                         </div>
@@ -226,36 +235,27 @@
                 </div>
             </div>
         </div>
+        <!-- All My Projects -->
+        <div class="all-my-works">
+            <RouterLink to="/my-works" class="text-decoration-none" @click="scrollTop()">
+                <span>All My Projects</span>
+            </RouterLink>
+        </div>
     </div>
+    <div></div>
 </template>
 <style>
-.swiper-wrapper .swiper-slide {
+.swiper-wrapper-selected-project .swiper-slide {
     height: auto;
 }
 
-.swiper-wrapper .swiper-button-prev {
-    /* margin-left: 5%; */
-    /* margin-top: 15%; */
+.swiper-wrapper-selected-project .swiper-button-prev,
+.swiper-wrapper-selected-project .swiper-button-next {
     display: none;
 }
 
-.swiper-wrapper .swiper-button-next {
-    /* margin-right: 5%; */
-    /* margin-top: 50%; */
-    display: none;
-}
-
-.swiper-wrapper .swiper-button-disabled {
+.swiper-wrapper-selected-project .swiper-button-disabled {
     display: none !important;
-}
-
-@media (max-width: 646px) {
-
-    .swiper-wrapper .swiper-button-prev,
-    .swiper-wrapper .swiper-button-next {
-        bottom: 0;
-        height: 60%;
-    }
 }
 </style>
 <script lang="ts">
@@ -283,6 +283,11 @@ export default {
         return {
             modules: [Pagination, Navigation],
         };
+    },
+    methods: {
+        scrollTop() {
+            window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+        }
     }
 };
 </script>

@@ -8,7 +8,7 @@
 
 .my-works {
   font-family: 'oswald_bold';
-  font-size: calc(5vw + 4vh);
+  font-size: 110px;
 }
 
 .works-header a {
@@ -19,3 +19,14 @@
   padding: calc(12vw + 5vh) 2rem;
 }
 
+@media (max-width: 768px) {
+    .my-works {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .my-works {
+        font-size: 70px;
+    }
+}

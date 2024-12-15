@@ -1,6 +1,7 @@
 .profile-block {
   background: #0d160b;
   height: 100%;
+  overflow: hidden;
 }
 
 .info-profile {
@@ -9,7 +10,8 @@
 }
 
 .info-profile p {
-  font-size: calc(0.5vw + 1vh);
+  font-size: 23px;
+  padding-right: 30px;
 }
 
 .showreel-btn {
@@ -19,7 +21,7 @@
 
 .profile-parent-block {
   width: 40%;
-  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 #contact-btn-profile {
@@ -47,7 +49,7 @@
 
 .text-center #sub-description {
   font-family: 'teachers_regular';
-  font-size: 1.5rem;
+  font-size: 25px;
 }
 
 .col-sm .bg-img-block {
@@ -171,23 +173,53 @@
   background-size: cover;
 }
 
-@media (min-width: 768px) {
-  .d-md-block-max {
-    display: block !important;
-  }
+.all-my-works {
+  text-align: center;
+  padding-top: 10rem;
+}
 
-  .d-md-flex-max {
-    display: flex !important;
-  }
+.all-my-works span {
+  font-family: 'oswald_regular';
+  color: #e15735;
+  font-size: 60px;
+}
 
-  .d-none-block-mobile {
-    display: none !important;
+.marquee-homepage {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+  position: absolute;
+  bottom: 0;
+}
+
+.marquee-homepage p {
+  display: inline-block;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+.marquee-info {
+  position: relative;
+}
+
+.profile-block-md {
+  padding-top: 100px;
+}
+
+@media (max-width: 500px) {
+  .marquee-homepage p {
+    font-size: 35px !important;
   }
 }
 
 @media (max-width: 767px) {
   .mobile-introduction-block {
     padding-top: 5rem;
+  }
+
+  .profile-block-md {
+    padding-top: unset;
   }
 
   .mobile-introduction-block p {
@@ -205,9 +237,6 @@
     padding-top: 2rem;
   }
 
-  .info-profile {
-  }
-
   .d-md-none-max {
     display: none !important;
   }
@@ -218,6 +247,30 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-md-block-max {
+    display: block !important;
+  }
+
+  .d-md-flex-max {
+    display: flex !important;
+  }
+
+  .d-none-block-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-profile p {
+    font-size: 16px !important;
+  }
+
+  .marquee-homepage p {
+    font-size: 50px;
   }
 }
 
@@ -263,5 +316,19 @@
 
   .logo-project-mobile {
     padding: calc(2vw + 2vh) !important;
+  }
+
+  .all-my-works {
+    padding-top: 5rem;
+  }
+
+  .all-my-works span {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .info-profile p {
+    font-size: 20px;
   }
 }
