@@ -30,7 +30,9 @@
                             </div>
                         </div>
                         <div class="showreel-btn-parent d-none d-md-block">
-                            <img class="showreel-btn" src="/svg/Showreel.svg" alt="Showreel-btn">
+                            <a href="#">
+                                <img class="showreel-btn" src="/svg/Showreel.svg" alt="Showreel-btn">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +74,7 @@
                     </div>
                 </div>
                 <div class="col-md img-profile-block position-relative">
-                    <img class="img-fluid" src="/images/Minh_Mobile_Profile.png" alt="">
+                    <img class="img-fluid" src="/images/Minh_Mobile_Profile_No_Showreel.png" alt="">
                 </div>
             </div>
         </div>
