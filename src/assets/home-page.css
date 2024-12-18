@@ -1,3 +1,13 @@
+#fixedHeader.scrolled {
+  background-color: #0d160b !important;
+  transition: background-color 200ms linear;
+}
+
+#fixedHeader.scrolled-out {
+  background-color: #d9d9d9 !important;
+  transition: background-color 200ms linear;
+}
+
 .profile-block {
   background: #0d160b;
   height: 100%;
@@ -208,7 +218,7 @@
 }
 
 .info-profile div {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 @media (max-width: 500px) {

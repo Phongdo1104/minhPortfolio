@@ -3,6 +3,18 @@ import { RouterLink, RouterView } from 'vue-router'
 import HeaderPage from './views/HeaderPage.vue'
 import FooterPage from './views/FooterPage.vue'
 import TestimonialBlock from './views/TestimonialBlock.vue'
+import ScrollTop from './views/ScrollTop.vue'
+
+window.onscroll = () => {
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollTopBtn.classList.add("scroll-top-in");
+        scrollTopBtn.classList.remove("scroll-top-out");
+    } else {
+        scrollTopBtn.classList.add("scroll-top-out");
+        scrollTopBtn.classList.remove("scroll-top-in");
+    }
+}
 </script>
 <template>
     <div id="header-block">
@@ -20,6 +32,9 @@ import TestimonialBlock from './views/TestimonialBlock.vue'
     </div>
     <div id="testimonial-block">
         <TestimonialBlock />
+    </div>
+    <div id="scroll-top">
+        <ScrollTop />
     </div>
     <div id="footer-block">
         <!-- Footer -->
