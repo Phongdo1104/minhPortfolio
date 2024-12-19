@@ -140,12 +140,6 @@ export default {
             modules: [Pagination, Navigation],
         };
     },
-    method: {
-        scroll() {
-            const element = document.getElementsByClassName('showreel');
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    },
     props: [
         'workTitle',
         'roleBgClass',

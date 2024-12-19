@@ -276,23 +276,6 @@ import 'swiper/css/navigation';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
-
-window.addEventListener("scroll", () => {
-    const url = window.location.pathname;
-    if (url !== "/") {
-        return;
-    }
-    const fixedHeader = document.getElementById('fixedHeader');
-
-    if (window.scrollY > fixedHeader?.offsetHeight) {
-        fixedHeader?.classList.remove("scrolled");
-        fixedHeader?.classList.add("scrolled-out");
-    } else if (window.scrollY === 0) {
-        fixedHeader?.classList.remove("scrolled-out");
-        fixedHeader?.classList.add("scrolled");
-    }
-});
-
 export default {
     components: {
         Swiper,

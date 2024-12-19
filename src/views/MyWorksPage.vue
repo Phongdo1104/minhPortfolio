@@ -6,7 +6,7 @@ import { ref } from 'vue';
 
 function scrollToView(refName: string) {
     const element = document.getElementById(refName)
-    element.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({ behavior: "smooth" });
 }
 </script>
 <template>

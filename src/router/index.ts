@@ -39,7 +39,7 @@ router.beforeEach((to: any, from, next) => {
     title = title.replace("-", " ");
     title = title.toLowerCase()
         .split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ');
     document.title = title;
     next();
