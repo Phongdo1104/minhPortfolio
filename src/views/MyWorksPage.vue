@@ -2,8 +2,6 @@
 import '../assets/my-works.css';
 import MyWorkBlock from '../components/MyWorkBlock.vue';
 
-import { ref } from 'vue';
-
 function scrollToView(refName: string) {
     const element = document.getElementById(refName)
     element?.scrollIntoView({ behavior: "smooth" });
