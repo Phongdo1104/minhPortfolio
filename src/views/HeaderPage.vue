@@ -4,13 +4,13 @@ import { ref } from 'vue'
 
 let show = ref(false);
 
-function closePopup() {
+function closePopup(this: any) {
     this.show = false;
     window.scrollTo(0, 0);
 }
 </script>
 <template>
-    <div class="d-block d-md-none header-sp fixed-header" :class="['home'].includes($route.name) ? 'scrolled' : ''" id="fixedHeader">
+    <div class="d-block d-md-none header-sp fixed-header" id="fixedHeader">
         <div class="position-absolute top-0 start-0 ms-3">
             <RouterLink to="/">
                 <img id="logo-home-page" src="/images/Logo_LightIcon.png" alt="" />

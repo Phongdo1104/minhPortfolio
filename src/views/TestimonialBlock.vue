@@ -1,5 +1,5 @@
 <template>
-    <swiper v-if="!['contact-me', 'my-works'].includes($route.name)" :effect="'flip'" :grabCursor="true" :pagination="{
+    <swiper :effect="'flip'" :grabCursor="true" :pagination="{
         dynamicBullets: true,
     }" :navigation="true" :modules="modules" class="swiper-wrapper pt-5 pb-5" id="testimonial-swiper">
         <swiper-slide class="testimonial-block">
