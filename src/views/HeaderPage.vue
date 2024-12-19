@@ -4,8 +4,8 @@ import { ref } from 'vue'
 
 let show = ref(false);
 
-function closePopup(this: any) {
-    this.show = false;
+function closePopup() {
+    show.value = false;
     window.scrollTo(0, 0);
 }
 </script>
@@ -17,7 +17,7 @@ function closePopup(this: any) {
             </RouterLink>
         </div>
         <div class="position-absolute top-0 end-0 mt-3 me-3">
-            <div href="#" @click="show = !show" id="menu-icon">
+            <div href="#" @click="show = !show">
                 <img id="menu-icon" src="/svg/menu.svg" alt="" />
             </div>
         </div>
